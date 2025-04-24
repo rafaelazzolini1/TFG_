@@ -255,7 +255,7 @@ export default function ChatInterface() {
     <div className="flex min-h-screen bg-gray-100 text-gray-900 font-sans">
       {/* Main Content */}
       <main className="flex-1 flex flex-col w-full">
-        <header className="bg-gray-700 shadow p-2 flex items-center justify-between">
+        <header className="bg-gray-900 shadow p-2 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <IconButton
               icon={PenSquare}
@@ -377,7 +377,7 @@ export default function ChatInterface() {
           </div>
         </div>
 
-        <div className="p-3 bg-gray-700 shadow">
+        <div className="p-3 bg-gray-900 shadow">
           <div className="max-w-2xl mx-auto flex items-center bg-gray-100 rounded-lg">
             <button
               onClick={() => fileInputRef.current?.click()}

@@ -222,7 +222,7 @@ export default function RegisterPage() {
                                 name="name"
                                 value={formData.name}
                                 onChange={handleChange}
-                                className={`w-full px-4 py-3 border ${errors.name ? "border-red-300" : "border-gray-300"} rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 transition duration-200`}
+                                className={`w-full px-4 py-3 border ${errors.name ? "border-red-300" : "border-gray-300"} rounded-lg focus:outline-none focus:ring-1 focus:ring-black text-gray-900 transition duration-200`}
                                 placeholder={t("Register.fullNamePlaceholder")}
                             />
                             {errors.name && <p className="mt-1 text-sm text-red-600">{errors.name}</p>}
@@ -238,7 +238,7 @@ export default function RegisterPage() {
                                 name="email"
                                 value={formData.email}
                                 onChange={handleChange}
-                                className={`w-full px-4 py-3 border ${errors.email ? "border-red-300" : "border-gray-300"} rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 transition duration-200`}
+                                className={`w-full px-4 py-3 border ${errors.email ? "border-red-300" : "border-gray-300"} rounded-lg focus:outline-none focus:ring-1 focus:ring-black text-gray-900 transition duration-200`}
                                 placeholder={t("Register.emailPlaceholder")}
                             />
                             {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email}</p>}
@@ -255,7 +255,7 @@ export default function RegisterPage() {
                                     name="password"
                                     value={formData.password}
                                     onChange={handleChange}
-                                    className={`w-full px-4 py-3 border ${errors.password ? "border-red-300" : "border-gray-300"} rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 transition duration-200`}
+                                    className={`w-full px-4 py-3 border ${errors.password ? "border-red-300" : "border-gray-300"} rounded-lg focus:outline-none focus:ring-1 focus:ring-black text-gray-900 transition duration-200`}
                                     placeholder={t("Register.passwordPlaceholder")}
                                 />
                                 <button
@@ -280,7 +280,7 @@ export default function RegisterPage() {
                                     name="confirmPassword"
                                     value={formData.confirmPassword}
                                     onChange={handleChange}
-                                    className={`w-full px-4 py-3 border ${errors.confirmPassword ? "border-red-300" : "border-gray-300"} rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 transition duration-200`}
+                                    className={`w-full px-4 py-3 border ${errors.confirmPassword ? "border-red-300" : "border-gray-300"} rounded-lg focus:outline-none focus:ring-1 focus:ring-black text-gray-900 transition duration-200`}
                                     placeholder={t("Register.confirmPasswordPlaceholder")}
                                 />
                                 <button
@@ -297,7 +297,7 @@ export default function RegisterPage() {
                         <motion.button
                             type="submit"
                             disabled={isLoading}
-                            className="w-full bg-black text-white py-3 rounded-lg hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 font-medium flex items-center justify-center"
+                            className="w-full bg-black text-white py-3 rounded-lg hover:bg-gray-800 focus:outline-none focus:ring-1 focus:ring-black transition duration-200 font-medium flex items-center justify-center"
                             variants={buttonVariants}
                             initial="hidden"
                             animate="visible"
